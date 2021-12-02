@@ -16,7 +16,7 @@ body{
     /* overflow:hidden; */
     max-width: 1920px;
     min-width: 1800px;
-    background-image: url(.\P1-3_工作區域\ 1-01.jpg);
+    background-image: url(/P01.jpg);
     background-attachment: fixed;
     background-size:cover;
     position: relative;
@@ -84,7 +84,7 @@ body{
 }
 
 .photo{
-    background-image: url(.\P1-4_工作區域\ 1-03.png);
+    background-image: url(/P102.png);
     width: 800px;
     height: 900px;
     background-size:contain;
