@@ -16,7 +16,7 @@ body{
     /* overflow:hidden; */
     max-width: 1920px;
     min-width: 1800px;
-    background-image: url(/P01.jpg);
+    background-image: url("./P01.jpg");
     background-attachment: fixed;
     background-size:cover;
     position: relative;
@@ -84,7 +84,7 @@ body{
 }
 
 .photo{
-    background-image: url(/P02.png);
+    background-image: url("./P02.png");
     width: 800px;
     height: 900px;
     background-size:contain;
