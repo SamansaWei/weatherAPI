@@ -1,0 +1,339 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css';
+body{
+    margin: 0px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+
+}
+.con{
+    margin: 0px auto;
+    width:  100vw;
+    height: 100%;
+    max-height: 1080px;
+    /* overflow:hidden; */
+    max-width: 1920px;
+    min-width: 1800px;
+    background-image: url(/img/P1-3_工作區域\ 1-01.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    position: relative;
+}
+
+.section-top{
+    width: 100%;
+    height: 100%;
+    max-height: 900px;
+    min-height: 900px;
+    background-repeat:no-repeat ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info{
+  z-index: 1;
+}
+
+.tito{
+  display: flex;
+  align-items: flex-end;
+}
+
+.tito h1{
+    font-size: 100px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.tito  p{
+    font-size: 70px;
+    margin: 0;
+}
+
+.menu{
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu ul{
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 0px 20px 10px 0px;
+    padding: 10px;
+}
+
+.menu li{
+  border-radius: 20px; 
+  font-size: 20px;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  text-align:center;
+}
+
+.counties{
+  background-color: rgb(255, 255, 255);
+  cursor:pointer;
+}
+
+.counties-red{
+  background-color: rgb(252, 71, 71);
+  font-weight:bold;
+}
+
+.photo{
+    background-image: url(/img/P1-4_工作區域\ 1-03.png);
+    width: 800px;
+    height: 900px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+.point {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.north{
+    position: relative;
+    left: 625px;
+    top: 5%;
+}
+
+.central{
+    position: relative;
+    left: 460px;
+    top: 28%;
+}
+
+
+.south{
+    position: relative;
+    left: 480px;
+    top: 60%;
+}
+
+.east{
+    position: relative;
+    left: 680px;
+    top: 30%;
+}
+
+
+.outer{
+    position: relative;
+    left: 20px;
+    top: 15%;
+}
+
+.point-run{
+  background-color: rgb(252, 71, 71);
+  animation: warn 1.5s ease-out 0s infinite;
+}
+
+
+@keyframes warn {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.section-P2{
+    width: 80%;
+    height: 1080px;
+}
+
+.heading{
+    background-color: rgb(255, 255, 255,0.8);
+    height: 120px;
+    text-align:center;
+    font-size: 60px;
+    margin: 0;
+    line-height:120px;
+}
+
+/* 下面是貼近來的喔 */
+html, body, .background {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.ba{
+  width: 100%;
+  height: 150px;
+}
+
+.section-botton{
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  top:0px;
+  left:0px;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  /* background: #eee; 
+  background: linear-gradient(240deg, rgba(150, 50, 50, 0.3), rgba(0, 0, 200, 0)); */
+}
+nav ul {
+  margin: 20px 20px 0 20px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+nav li a {
+  display: block;
+  width: 50px;
+  text-align: center;
+  color: #aaa;
+  cursor: pointer;
+}
+nav li a:hover {
+  color: #444;
+}
+nav li a.active {
+  color: #4444ff;
+}
+
+#card {
+  box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  width: 300px;
+  padding: 0;
+  height: 400px;
+  min-height: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+#card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: #888;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+  transition: color 2s ease;
+  height:60px;
+}
+.thunder #card .details {
+  color: #ddd;
+}
+#card .details .right {
+  text-align: right;
+}
+#sky {
+  font-size: 18px;
+}
+
+#rain-word{
+  font-size: 18px;
+}
+
+#card .details #summary {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: right;
+}
+#card .details .counties-name {
+  font-size: 60px;
+  line-height: 60px;
+  display: inline-block;
+}
+
+#card .details .temp {
+  font-size: 60px;
+  line-height: 60px;
+  display: inline-block;
+}
+
+.feel{
+  font-size: 18px;
+  display: inline-block;
+}
+
+#card .details .temp span {
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+.weather {
+  background-color: #DAE3FD;
+  transition: background-color 2s ease;
+}
+.thunder .weather {
+  background-color: #9FA4AD;
+}
+.rain .weather {
+  background-color: #D8D8D8;
+}
+.sun .weather {
+  background-color: #ccccff;
+}
+.weather #inner {
+  background-color: white;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.weather .cloud {
+  transition: fill 2s ease;
+}
+.weather #cloud1 {
+  fill: #efefef;
+}
+.thunder .weather #cloud1 {
+  fill: #9FA4AD;
+}
+.weather #cloud2 {
+  fill: #E6E6E6;
+}
+.thunder .weather #cloud2 {
+  fill: #8B8E98;
+}
+.weather #cloud3 {
+  fill: #D5D5D5;
+}
+.thunder .weather #cloud3 {
+  fill: #7B7988;
+}
+
+#outer, #back {
+  position: fixed;
+  pointer-events: none;
+  top:0px;
+}
